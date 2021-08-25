@@ -1,0 +1,15 @@
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/tonnjiru/.rbenv/versions/2.7.0/bin/ruby -I /Users/tonnjiru/.rbenv/versions/2.7.0/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210825-16180-b92c74.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210825-16180-mrdt3b/skiptrace/internal

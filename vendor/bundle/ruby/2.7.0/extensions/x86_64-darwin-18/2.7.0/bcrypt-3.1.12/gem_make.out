@@ -1,0 +1,19 @@
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.12/ext/mri
+/Users/tonnjiru/.rbenv/versions/2.7.0/bin/ruby -I /Users/tonnjiru/.rbenv/versions/2.7.0/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210825-24483-1ikuui4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.12/ext/mri
+make DESTDIR\= clean
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.12/ext/mri
+make DESTDIR\=
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+
+current directory: /Users/tonnjiru/environment/sample_app/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.12/ext/mri
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20210825-24483-pmnmlr
