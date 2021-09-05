@@ -37,7 +37,9 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
-  config.active_storage.service = :local
+
+# アップロードされたファイルをAWSに保存する
+  config.active_storage.service = :amazon
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
@@ -114,10 +116,6 @@ Rails.application.configure do
   # timestamps for the last write to the primary. The resolver uses the context
   # class timestamps to determine how long to wait before reading from the
   # replica.
-
-   # アップロードされたファイルをAWSに保存する
-   config.active_storage.service = :amazon
-   
   # By default Rails will store a last write timestamp in the session. The
   # DatabaseSelector middleware is designed as such you can define your own
   # strategy for connection switching and pass that into the middleware through
