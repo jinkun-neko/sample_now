@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
-  
+
   def setup
     @user = users(:michael)
   end
@@ -14,6 +14,7 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_no_difference 'Micropost.count' do
       post microposts_path, params: { micropost: { content: "" } }
     end
+    
     assert_select 'div#error_explanation'
     assert_select 'a[href=?]', '/?page=2'  # 正しいページネーションリンク
     # 有効な送信
@@ -30,7 +31,8 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_difference 'Micropost.count', -1 do
       delete micropost_path(first_micropost)
     end
-    # 違うユーザーのプロフィールにアクセス（削除リンクがないことを確認）
+
+    # 違うユーザーのプロフィールにアクセス (削除リンクがないことを確認)
     get user_path(users(:archer))
     assert_select 'a', text: 'delete', count: 0
   end
