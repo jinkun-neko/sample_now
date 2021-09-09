@@ -20,8 +20,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap-sass', '3.3.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'mimemagic', '~> 0.3.10'
-gem 'minitest', group: :test
-gem 'minitest-reporters', group: :test
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
@@ -38,6 +36,8 @@ end
 
 group :test do
   gem 'pg', '0.20.0', group: :production
+  gem 'minitest', group: :test
+  gem 'minitest-reporters', group: :test
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver',       '3.142.4'
   gem 'guard',                    '2.16.2'
